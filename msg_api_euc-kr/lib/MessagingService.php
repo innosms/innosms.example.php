@@ -36,7 +36,7 @@ class MessagingService
 
 			if($postdata){
 				foreach($postdata as $k => $v){
-					if($k == "msg" || $k == "subject") 
+					if($k == "msg" || $k == "subject")
 						$v = urlencode($v);
 
 					$temp[] = $k."=".$v;
@@ -51,7 +51,6 @@ class MessagingService
 		$options = array(
 			CURLOPT_POST => $isPost,
 			CURLOPT_SSL_VERIFYPEER => FALSE,
-			CURLOPT_SSLVERSION => 3,
 			CURLOPT_HEADER => 0,
 			CURLOPT_CUSTOMREQUEST => $method,
 			CURLOPT_TIMEOUT => 10,
