@@ -22,7 +22,7 @@ $msg_list = array(
 $contents = array(
 	"msg_type" => "sms", //메세지 형식
 	"msg_list" => $msg_list,
-	"callback" => "15997944", //회신번호
+	"callback" => "01011111111", //회신번호
 );
 */
 
