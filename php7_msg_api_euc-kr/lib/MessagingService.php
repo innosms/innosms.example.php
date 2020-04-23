@@ -69,7 +69,7 @@ class MessagingService
 
 		if($http_status != 200){
 			throw new APIException($responseJson);
-			//¿À·ùÄÚµå ¹è¿­·Î ¼ö½Å
+			//ì˜¤ë¥˜ì½”ë“œ ë°°ì—´ë¡œ ìˆ˜ì‹ 
 			//$result = new APIException($responseJson);
 			//$returnResult = $result->toArray();
 		}else{
@@ -100,7 +100,7 @@ class MessagingService
 			foreach($contents as $key => $val)
 			{
 				if($key == "image")
-					$result[$key] = (!empty($val))?new CURLFile(realpath($fname)):"";
+					$result[$key] = (!empty($val))?new CURLFile(realpath($val)):"";
 				else{
 					if(preg_match("/^(msg|msg_list|subject)$/", $key)){
 						$val = $this->convertEuckrToUtf8($val);
