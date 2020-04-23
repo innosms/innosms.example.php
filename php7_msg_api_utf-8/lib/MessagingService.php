@@ -100,7 +100,7 @@ class MessagingService
 			foreach($contents as $key => $val)
 			{
 				if($key == "image")
-               $result[$key] = (!empty($val))?new CURLFile(realpath($fname)):"";
+               $result[$key] = (!empty($val))?new CURLFile(realpath($val)):"";
 				else{
 					/*
 					if(preg_match("/^(msg|msg_list|subject)$/", $key)){
