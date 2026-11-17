@@ -15,7 +15,7 @@ $contents = array(
 
 //예약전송일 경우 예약시간 추가
 /*
-$contents['trandate'] = "20141130193011"; //시간 형식 : YYYYMMDDHHMMSS
+$contents['trandate'] = "20261111193011"; //시간 형식 : YYYYMMDDHHMMSS
 */
 
 $MessagingService = new MessagingService($client_id, $api_key);
